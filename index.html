@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <Style>
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+
+.bahamas-flag {
+    position: relative;
+    width: 300px;
+    height: 200px;
+}
+
+.stripe {
+    width: 100%;
+    height: 33.33%;
+}
+
+.stripe.top {
+    background-color: #00abc7;
+}
+
+.stripe.middle {
+    background-color: #fcd116;
+}
+
+.stripe.bottom {
+    background-color: #00abc7;
+}
+
+/* .triangle {
+    position: absolute;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-top: 100px solid transparent;
+    border-bottom: 100px solid transparent;
+    border-left: 100px solid black;
+} */
+
+.triangle {
+    position: absolute;
+    left: 0;
+    width: 30%;
+    height: 100%;
+    background-color: black;
+    clip-path: polygon(0% 0%, 100% 50%, 0% 100%);
+}
+    .container{
+        display: flex; 
+        flex-direction: column;          
+    }
+
+
+    </Style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Welcome to BAHAMAS</h1> <br><br>
+    <div class="bahamas-flag">
+        <div class="triangle"></div>
+        <div class="stripe top"></div>
+        <div class="stripe middle"></div>
+        <div class="stripe bottom"></div>
+        </div>
+    </div>
+</body>
+</html>
